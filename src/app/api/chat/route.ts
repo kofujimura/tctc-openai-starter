@@ -1,7 +1,7 @@
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 import { SESSION_COOKIE, verifySessionToken } from "@/lib/session";
-import { checkOpenAiCallerRole } from "@/lib/tctc";
+import { checkOpenAiCallerRole, TctcServiceError } from "@/lib/tctc";
 
 export const runtime = "nodejs";
 
@@ -80,6 +80,15 @@ export async function POST(request: Request): Promise<NextResponse> {
     const output = await callOpenAi(prompt);
     return NextResponse.json({ output, role });
   } catch (error) {
+    if (error instanceof TctcServiceError) {
+      return NextResponse.json(
+        { error: error.message },
+        {
+          status: error.statusCode,
+          headers: error.statusCode === 503 ? { "Retry-After": "2" } : undefined,
+        },
+      );
+    }
     return NextResponse.json(
       { error: error instanceof Error ? error.message : "Request failed." },
       { status: 500 },

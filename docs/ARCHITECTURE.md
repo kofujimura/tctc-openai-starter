@@ -49,6 +49,12 @@ The OpenAI API key, session secret, and RPC URL remain in the server environment
 The server performs the tctc role check for every protected operation; UI state
 and session state are never authorization decisions.
 
+Only a valid `check_role` response with `hasRole: false` becomes an HTTP 403
+denial. MCP tool errors and transport failures become HTTP 503 responses, while
+malformed MCP responses become HTTP 502 responses. If the `tctc-mcp` child
+process exits, its cached client is discarded and the next request starts a new
+process instead of reusing the closed connection.
+
 The MCP process is spawned from the locally installed `tctc-mcp` dependency and
 receives only the environment needed for the configured chain.
 
