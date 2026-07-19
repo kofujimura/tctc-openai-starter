@@ -1,0 +1,22 @@
+{
+  "chains": {
+    "sepolia": {
+      "chainId": 11155111,
+      "rpcUrl": "${SEPOLIA_RPC_URL}"
+    }
+  },
+  "defaultChain": "sepolia",
+  "roles": {
+    "OPENAI_CALLER_ROLE": {
+      "description": "May call the sample OpenAI API route by owning ERC1155 token typeId 2.",
+      "controlTokens": [
+        {
+          "chain": "sepolia",
+          "standard": "erc1155",
+          "address": "0x3423816644f557f6d14B28735bd5af45f2679E8a",
+          "typeId": 2
+        }
+      ]
+    }
+  }
+}

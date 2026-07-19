@@ -1,0 +1,43 @@
+{
+  "name": "tctc-openai-token-gate",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Next.js reference app that gates OpenAI API access with tctc-mcp",
+  "license": "Apache-2.0",
+  "author": "Ko Fujimura <ko@fujimura.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kofujimura/tctc-openai-token-gate.git"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "next typegen && tsc --noEmit",
+    "check": "npm run typecheck && npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.0",
+    "jose": "^6.2.3",
+    "lucide-react": "^1.25.0",
+    "next": "^15.4.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "siwe": "^3.0.0",
+    "tctc-mcp": "^0.3.2",
+    "viem": "^2.34.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "^5.7.0"
+  },
+  "overrides": {
+    "postcss": "8.5.19"
+  }
+}
