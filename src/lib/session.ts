@@ -2,8 +2,8 @@ import { jwtVerify, SignJWT } from "jose";
 import { assertAddress } from "@/lib/auth";
 import type { Address } from "viem";
 
-const SESSION_ISSUER = "tctc-openai-token-gate";
-const SESSION_AUDIENCE = "tctc-openai-token-gate-web";
+const SESSION_ISSUER = "tctc-openai-starter";
+const SESSION_AUDIENCE = "tctc-openai-starter-web";
 const SESSION_LIFETIME = "8h";
 
 export const NONCE_COOKIE = "tctc_nonce";

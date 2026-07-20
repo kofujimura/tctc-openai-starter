@@ -1,6 +1,6 @@
-# tctc OpenAI Token Gate
+# tctc-openai-starter
 
-A standalone Next.js reference application that protects an OpenAI API route with
+A standalone Next.js starter that protects an OpenAI API route with
 on-chain token ownership verified by
 [tctc-mcp](https://github.com/kofujimura/tctc-mcp).
 
@@ -18,8 +18,8 @@ Requirements:
 - An OpenAI API key
 
 ```bash
-git clone https://github.com/kofujimura/tctc-openai-token-gate.git
-cd tctc-openai-token-gate
+git clone https://github.com/kofujimura/tctc-openai-starter.git
+cd tctc-openai-starter
 npm install
 cp .env.local.example .env.local
 npm run dev

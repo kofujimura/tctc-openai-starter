@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./styles.css";
 
 export const metadata: Metadata = {
-  title: "tctc OpenAI Token Gate",
+  title: "tctc OpenAI Starter",
   description: "Token-gated OpenAI access powered by tctc-mcp",
 };
 

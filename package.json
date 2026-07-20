@@ -1,13 +1,13 @@
 {
-  "name": "tctc-openai-token-gate",
+  "name": "tctc-openai-starter",
   "version": "0.1.0",
   "private": true,
-  "description": "A Next.js reference app that gates OpenAI API access with tctc-mcp",
+  "description": "A Next.js starter that gates OpenAI API access with tctc-mcp",
   "license": "Apache-2.0",
   "author": "Ko Fujimura <ko@fujimura.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kofujimura/tctc-openai-token-gate.git"
+    "url": "git+https://github.com/kofujimura/tctc-openai-starter.git"
   },
   "type": "module",
   "engines": {

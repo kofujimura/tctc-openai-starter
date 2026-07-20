@@ -64,7 +64,7 @@ async function getTctcClient(): Promise<Client> {
         },
       });
       const client = new Client(
-        { name: "tctc-openai-token-gate", version: "0.1.0" },
+        { name: "tctc-openai-starter", version: "0.1.0" },
         { capabilities: {} },
       );
 

@@ -279,13 +279,13 @@ export default function TokenGateApp({ config }: { config: PublicGateConfig }) {
   return (
     <>
       <header className="topbar">
-        <a className="brand" href="/" aria-label="tctc OpenAI Token Gate home">
+        <a className="brand" href="/" aria-label="tctc OpenAI Starter home">
           <span className="brand-mark"><ShieldCheck size={19} aria-hidden="true" /></span>
           <span>tctc / OpenAI Token Gate</span>
         </a>
         <a
           className="repo-link"
-          href="https://github.com/kofujimura/tctc-openai-token-gate"
+          href="https://github.com/kofujimura/tctc-openai-starter"
           target="_blank"
           rel="noreferrer"
         >
