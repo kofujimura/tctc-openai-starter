@@ -22,14 +22,14 @@
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.17.0",
-    "jose": "^6.2.3",
-    "lucide-react": "^1.25.0",
-    "next": "^16.2.10",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "jose": "^6.2.4",
+    "lucide-react": "^1.27.0",
+    "next": "^16.2.12",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
     "siwe": "^3.0.0",
     "tctc-mcp": "^0.3.2",
-    "viem": "^2.34.0"
+    "viem": "^2.55.8"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
